@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prashanth Kumar Kadasi — About</title>
+<meta name="description" content="Prashanth Kumar Kadasi: data analyst moving into AI engineering. Projects shipped, experience, and how to reach me.">
+<style>
+:root{--bg:#fff;--fg:#1b1f24;--muted:#5b6570;--line:#e3e6ea;--accent:#0b5fff;--card:#f7f8fa}
+@media(prefers-color-scheme:dark){:root{--bg:#0f1216;--fg:#e8eaed;--muted:#9aa4af;--line:#262c33;--accent:#6ea0ff;--card:#161a20}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+main{max-width:820px;margin:0 auto;padding:48px 20px 80px}
+a{color:var(--accent)}
+h1{font-size:2.2rem;margin:0 0 4px}
+h2{font-size:1.4rem;margin:48px 0 16px;padding-bottom:6px;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;margin:0 0 2px}
+.muted{color:var(--muted)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px 20px;margin:16px 0}
+.card p{margin:8px 0}
+.stack{color:var(--muted);font-size:.9rem;margin:0}
+ul{padding-left:1.2rem}
+li{margin:4px 0}
+nav a{margin-right:16px}
+dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 18px}
+dt{color:var(--muted)}dd{margin:0}
+.note{font-size:.9rem;color:var(--muted)}
+</style>
+</head>
+<body>
+<main>
+<header>
+  <h1>Prashanth Kumar Kadasi</h1>
+  <p class="muted">Data Analyst moving into AI engineering · Hyderabad, Telangana, India</p>
+  <nav><a href="#about">About</a><a href="#shipped">Shipped</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#contact">Contact</a></nav>
+</header>
+
+<section id="about">
+<h2>Who I am</h2>
+<p>I have 3.5+ years in data and analytics (2023–present) and 9 years in healthcare compliance auditing at Optum / UnitedHealth Group (2014–2023). I have about 2 years of AI and agent experience, self-directed and in production, and I'm moving into AI engineering.</p>
+<p>My held job titles are Data Analyst. The move into AI is a direction, not a title I hold. The audit discipline from years of zero-tolerance quality gates is what I now apply to autonomous AI systems.</p>
+<p>I'm based in Hyderabad, work remotely, and am open to relocation with visa sponsorship.</p>
+</section>
+
+<section id="shipped">
+<h2>What I've shipped</h2>
+<p class="note">These are independent, self-directed projects, not employer work. Deploying them does not imply production users, revenue, or adoption.</p>
+
+<article class="card">
+  <h3>BugAgents — Two Autonomous Security Research Agents</h3>
+  <p class="stack">Python/Node, omp + agy CLI orchestration, bug-bounty scope integration</p>
+  <p>Two agents on disjoint targets hunt real bugs in live bug bounty programs, with a submission gate that only promotes a report when the workspace corroborates it.</p>
+  <ul>
+    <li>8 findings across 14 vulnerability classes (CWE), including 5 High/Critical and 3 Medium, each with a reproducing proof of concept, pinned commit, and <code>file:line</code> citations. Vendor, asset, and vulnerability-class specifics are withheld pending responsible disclosure.</li>
+    <li>A report promotion gate (scope match + HEAD match + non-empty repro + evidence files must exist). It promoted 2 reports and refused 34 unverified candidates.</li>
+    <li>Per-turn tool-call audit: any out-of-scope host or offensive tool aborts the agent. A live run was aborted exactly this way.</li>
+    <li>22 hunt runs, 84 agent turns, 15,317 tool calls across the <code>agy</code> and <code>omp</code> harnesses.</li>
+  </ul>
+  <p><a href="https://bug.kprsnt.in">bug.kprsnt.in</a></p>
+</article>
+
+<article class="card">
+  <h3>AgentSwarm — Autonomous Multi-Agent Research Arena</h3>
+  <p class="stack">Node.js, multi-substrate (agy/omp/step/pi), hash-chained forensic ledger</p>
+  <p>A swarm runs unattended against real research questions while an independent oracle checks every turn for phantom artifacts, fabricated numbers, and asserted verdicts on undecidable questions.</p>
+  <ul>
+    <li>34 runs, all 35 ledger hash chains intact. The ledger lives outside the agents' writable directory, so the audited cannot edit the audit.</li>
+    <li>0 oracle violations across 1,254 tool calls, and 0 of 2 self-assessing agents overclaimed.</li>
+    <li>A controlled 4-substrate benchmark (agy/omp/step/pi) on an identical task, with a cost analysis showing subscription-priced <code>agy</code> did ~22× more fresh-token volume than <code>omp</code> at zero marginal cost.</li>
+    <li>An independent numerical audit: 22 of 25 quantitative claims verified correct to the printed digits, with all 5 defects in markdown prose rather than Python modules. Audit verdict: B+ / not publication-grade without that numerical audit.</li>
+    <li>The swarm produced 520 world artifacts, 33 publications, and 202 finding blogs across 9 research domains. Their own test suites pass 195/224 when independently re-run.</li>
+    <li>Two agent-authored cosmology manuscripts in REVTeX, attributed to the agent authors A001_DarkMatter / A002_QuantumCosmos. I built the system; I am not an author of the physics.
+      <ul>
+        <li><strong>Paper 1 — published as a preprint on Zenodo</strong> (8 Oct 2026, DOI <a href="https://zenodo.org/records/23232189">10.5281/zenodo.23232189</a>), not peer-reviewed: <em>Gravitational Decoherence and Stochastic Tidal Phase Diffusion of Galactic Dark Matter Solitons: Microscopic Lindblad Evolution and Pulsar Timing Observables.</em></li>
+        <li><strong>Paper 2 — manuscript, not submitted:</strong> <em>The Unified Dark Sector Quantum Phase Transition.</em> Its attached self-audit records that the DESI (w<sub>0</sub>, w<sub>a</sub>) agreement is circular and the S<sub>8</sub> result is tuned, and recommends it not be submitted as a claim of resolving those tensions.</li>
+      </ul>
+    </li>
+  </ul>
+  <p><a href="https://agent.kprsnt.in">agent.kprsnt.in</a></p>
+</article>
+
+<article class="card">
+  <h3>JobAgents — Automated Job Search Pipeline</h3>
+  <p class="stack">Python (stdlib only), omp/pi/agy orchestration, SQLite</p>
+  <p>A multi-agent pipeline that sources roles from ATS APIs, scores them deterministically, then tailors resumes and drafts outreach from Markdown config.</p>
+  <ul>
+    <li>Sources 7,613 jobs / 5,854 distinct roles from 10 sources (Greenhouse, Ashby, Lever, LinkedIn, RemoteOK, Remotive, HN, X, Indeed, LinkedIn search), with 1,759 duplicate postings merged via two-layer dedupe, across 334 companies.</li>
+    <li>Deterministic matching scores every job across 3 role tracks with zero model calls, so only top-N candidates reach an LLM. It computed 22,839 match scores, and 155 cleared the score-65 threshold.</li>
+    <li>Absorbed three undocumented CLI quirks found by probing (omp model-path 404, agy prompt-binding, pi provider/model split) into a single tested harness.</li>
+  </ul>
+  <p><a href="https://job.kprsnt.in">job.kprsnt.in</a></p>
+</article>
+
+<article class="card">
+  <h3>MyLocalCLI — Local-First Agentic Coding Assistant</h3>
+  <p class="stack">Node.js, CLI, multi-provider, published on npm</p>
+  <p>An open-source terminal coding agent, a Claude Code alternative built around local and free-tier models, with no telemetry and no paid subscription required.</p>
+  <ul>
+    <li>Published on npm as <code>mylocalcli</code> (version 4.0.2). Install with <code>npm install -g mylocalcli</code>; it runs as <code>mlc</code> and <code>mylocalcli</code>.</li>
+    <li>8 documented providers: Ollama and LM Studio (local/offline), vLLM (self-hosted), OpenRouter and Groq (free tiers), NVIDIA NIM, OpenAI, and any custom OpenAI-compatible endpoint.</li>
+    <li>42 built-in tools for full-stack engineering: file operations, code modification, search, git, web fetch, todos, multi-edit.</li>
+    <li>38 dynamic skills that auto-inject best-practice instructions when matching project files are detected (Python, React, Go, Rust, Terraform, Kubernetes, PostgreSQL, security, testing, and more).</li>
+    <li>5 specialised sub-agents: code reviewer, code explorer, test generator, refactorer, doc writer.</li>
+    <li>Parallel tool dispatch via <code>Promise.all</code>, a Stdio MCP bridge, interactive plan mode, multimodal vision, and a full-screen TUI.</li>
+    <li>Provider failover between providers on rate limits, context overflow, or connection drops. Models are never silently swapped.</li>
+  </ul>
+  <p>No claimed users, revenue, or commercial adoption. <a href="https://mlc.kprsnt.in">mlc.kprsnt.in</a></p>
+</article>
+
+<article class="card">
+  <h3>rAsh Score — Multi-Model AI Brand-Visibility Index</h3>
+  <p class="stack">Next.js, Turso/LibSQL, GitHub Actions, Vercel, multi-provider model APIs</p>
+  <p>A live platform that queries several foundation models with standardised evaluation prompts and scores how they perceive, recommend and rank brands. It is essentially a multi-model evaluation harness with a published rubric. Formerly called BrandScore.</p>
+  <ul>
+    <li>300 tracked brands across 20 industry cohorts, scored on 4 independent dimensions: recommendation, sentiment, prominence, and factual accuracy.</li>
+    <li>4 providers queried: ChatGPT (OpenAI), Gemini, Claude and Groq.</li>
+    <li>Daily automated pipelines via GitHub Actions write directly into Turso (LibSQL), surfaced through a Next.js dashboard on Vercel.</li>
+    <li>Includes a multi-agent debate arena (two advocate agents plus a judge), a text-to-SQL analyst chat, and automated AI-authored weekly reports.</li>
+  </ul>
+  <p><a href="https://rashscore.live">rashscore.live</a></p>
+</article>
+
+<article class="card">
+  <h3>MediFlow — Autonomous Multi-Agent Medicare Enrollment &amp; Regulatory Compliance Simulation</h3>
+  <p class="stack">Python/Next.js/FastAPI, 7-agent mesh, Google Antigravity &amp; DeepSeek harness, live simulation</p>
+  <p>An autonomous multi-agent simulation that models and automates high-volume Medicare Advantage enrollment processing, CMS transaction reconciliation, and zero-tolerance regulatory auditing. It targets the manual work-basket bottlenecks that threaten CMS's 10-day statutory Turnaround Time (TAT) standard during the Annual Election Period (AEP).</p>
+  <ul>
+    <li>An autonomous 7-agent mesh that intakes, processes, validates, handles CMS transaction responses (TRR/MARx), and audits the whole workflow under CMS guidelines.</li>
+    <li>Grounded in 9 years of auditing Medicare transactions at Optum (UnitedHealth Group) across Medicare Enrollment and Regulatory Adherence &amp; Controls.</li>
+    <li>Designed for AEP (Oct 15 – Dec 7) surges: resolves messy Employer Group census batch files, missing retiree election forms, and out-of-area county/plan mismatches without rewriting legacy core systems.</li>
+    <li>Iterated and hardened across frontier models (deepseek-4.1-flash, gemini-3.8-flash, claude-opus-4.6) using the Google Antigravity (agy CLI) and a dedicated DeepSeek harness to stress-test prompt resilience, edge-case routing, and audit report accuracy.</li>
+    <li>Runs locally in terminal CLIs (<code>agy</code> and <code>omp</code>) or with OpenAI/Gemini API keys via GitHub/Vercel.</li>
+    <li>An immutable zero-tolerance audit ledger for audit readiness, transaction discrepancy tracking, and compliance validation.</li>
+    <li>Full simulation cycles on AI-generated synthetic data in ~30s per application.</li>
+  </ul>
+  <p><a href="https://mediflow.kprsnt.in">mediflow.kprsnt.in</a></p>
+</article>
+
+<h3>Live sites</h3>
+<ul>
+  <li><a href="https://job.kprsnt.in">job.kprsnt.in</a> — JobAgents dashboard</li>
+  <li><a href="https://agent.kprsnt.in">agent.kprsnt.in</a> — AgentSwarm arena</li>
+  <li><a href="https://bug.kprsnt.in">bug.kprsnt.in</a> — BugAgents</li>
+  <li><a href="https://mlc.kprsnt.in">mlc.kprsnt.in</a> — MyLocalCLI portal</li>
+  <li><a href="https://rashscore.live">rashscore.live</a> — rAsh Score dashboard</li>
+  <li><a href="https://mediflow.kprsnt.in">mediflow.kprsnt.in</a> — MediFlow simulation</li>
+</ul>
+</section>
+
+<section id="experience">
+<h2>Experience</h2>
+
+<article class="card">
+  <h3>Data Analyst — Black Piano</h3>
+  <p class="stack">Remote · Mar 2026 – Present</p>
+  <p class="note">Employment moved from Pi Software Solutions to Black Piano, which hires India-based talent to serve its US/UK clients. The title is Data Analyst at both.</p>
+  <ul>
+    <li>Created end-to-end pipelines for various client dashboards.</li>
+    <li>Worked on various industry reports (Black Friday, Christmas, sales) and ad-hoc dashboards.</li>
+    <li>Built a self-healing data-quality agent powered by Gemini: it resolves missing brand domains (needed for dashboard logo rendering) via reference-table lookup with LLM fallback, writes results back to both the dataset and lookup table, retries 3x on failure, and escalates via email for human review only when unresolved.</li>
+    <li>Developed a custom MCP tool that lets non-technical marketing and sales teams generate publication-ready, data-grounded blog posts from a one-line prompt, backed by auto-exported Google Sheets pipelines.</li>
+    <li>Engineered an automated AI insights pipeline (ChatGPT) generating market- and sector-level intelligence weekly, auto-published to a deployed client-facing website, reducing client manual analysis time.</li>
+    <li>Architected 18 automated ETL pipelines feeding BigQuery → Looker Studio dashboards across 18 industry sectors.</li>
+  </ul>
+</article>
+
+<article class="card">
+  <h3>Data Analyst — Pi Software Solutions (Pi - Datametrics)</h3>
+  <p class="stack">Remote · Mar 2023 – Feb 2026</p>
+  <ul>
+    <li>Built production Python data pipelines (internal <code>Pi-API</code> package) for automated BigQuery access across 10+ client dashboards.</li>
+    <li>Delivered 30+ analytical reports for US &amp; UK industry trends.</li>
+  </ul>
+</article>
+
+<article class="card">
+  <h3>Enrollment Quality &amp; Audit Representative (CMS Auditor) — Optum (UnitedHealth Group)</h3>
+  <p class="stack">Hyderabad, India · Apr 2014 – Mar 2023</p>
+  <ul>
+    <li>Audited federal enrollment transactions for Centers for Medicare &amp; Medicaid Services (CMS) compliance, providing regulatory documentation, statutory compliance checks, and audit readiness.</li>
+    <li>Promoted via internal job posting (IJP) in March 2016 from Claims Associate (Apr 2014 – Feb 2016) to Enrollment Quality &amp; Audit Representative, based on audit precision and analytical rigor.</li>
+    <li>Executed end-to-end data validation and regulatory compliance checks across complex enrollment transactions, generating audit-ready documentation and discrepancy reports for CMS.</li>
+    <li>Applied zero-tolerance quality gates to high-volume transaction datasets, building the core verification and audit discipline now applied to autonomous AI systems.</li>
+  </ul>
+</article>
+
+<h3>Education</h3>
+<p><strong>Anurag Group of Institutions (JNTUH)</strong> — M. Pharmacy (Pharmaceutical Analysis &amp; Quality Assurance), May 2012</p>
+</section>
+
+<section id="skills">
+<h2>Skills</h2>
+<dl>
+  <dt>Agentic</dt><dd>Multi-Agent Swarms, FastMCP (MCP), Tool/Function Calling, Long-Horizon Agent CI/CD, Human-in-the-Loop Escalation, RAG, Living Memory Compaction, Bounded Autonomy, Multi-CLI Orchestration (Antigravity, Claude Code, DeepSeek Harness, omp, pi, agy), Agent Evaluation Harnesses, Hash-Chained Audit Ledgers, Scope Guardrails, Budget Enforcement, AI-Assisted Development</dd>
+  <dt>LLM</dt><dd>LoRA/QLoRA Fine-Tuning, Model Evaluation &amp; Steerability, Bias Quantification, Multi-Model A/B Evaluation, Prompt Engineering, Independent Verifier Design, Substrate Benchmarking</dd>
+  <dt>Security</dt><dd>Source-Code Audit, Vulnerability Research, Proof-of-Concept Development, CVSS Scoring, CWE Classification, Bug Bounty Scope Handling, Responsible Disclosure</dd>
+  <dt>Languages</dt><dd>Python (PyTorch, Pandas, NumPy, FastAPI), Node.js, TypeScript, SQL, JavaScript, HTML</dd>
+  <dt>Data</dt><dd>BigQuery, Looker Studio, Tableau, ETL Orchestration, Data Modeling, Data Quality &amp; Validation, Data Pipeline Maintenance, BigQuery Notebook, Scheduled Queries, Google Apps Script, SQLite</dd>
+  <dt>Infra</dt><dd>GCP, Cloud Run, Docker, GitHub Actions, Vercel, Linux/Bash, Git</dd>
+  <dt>Platforms</dt><dd>Claude 4.x, Gemini 2.5/3.x, GPT-OSS 120B/20B, DeepSeek 4.1, Ollama, NVIDIA NIM, OpenRouter</dd>
+</dl>
+</section>
+
+<section id="contact">
+<h2>How to reach me</h2>
+<dl>
+  <dt>Website</dt><dd><a href="https://kprsnt.in">kprsnt.in</a></dd>
+  <dt>GitHub</dt><dd><a href="https://github.com/kprsnt2">github.com/kprsnt2</a></dd>
+  <dt>Hugging Face</dt><dd><a href="https://huggingface.co/kprsnt">huggingface.co/kprsnt</a></dd>
+  <dt>LinkedIn</dt><dd><a href="https://linkedin.com/in/prashanth-kumar-kadasi-b5281765">linkedin.com/in/prashanth-kumar-kadasi-b5281765</a></dd>
+  <dt>Email</dt><dd><a href="mailto:kprsnt@zohomail.in">kprsnt@zohomail.in</a></dd>
+  <dt>Phone</dt><dd><a href="tel:+919948311964">+91-9948311964</a></dd>
+  <dt>Location</dt><dd>Hyderabad, Telangana, India</dd>
+</dl>
+</section>
+</main>
+</body>
+</html>
